@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="https://i.ibb.co/2v6SL9z/logo.png" alt="logo" border="0" class="logo">
+                <!-- <img src="/NEW/img/logo.png" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Project">Project</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web developer</p>
+                <h1>Hi,I'm <span> Sumant</span><br> Kumar From Bihar</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://i.ibb.co/YZRbDqG/12-Photoroom.png" alt="12-Photoroom" border="0">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="Sub-tital">About Me</h1>
+                    <p>Hey, I'm Sumant Kumar and I am from Patna (Bihar). 
+                        Currently, I've been staying in Delhi job purpose, I've done MCA from LNCT University Bhopal (MP).
+                        I did My BCA in 2021,12th in 2018 and 10th in 2016 ,
+                        I'm proficient in Python, MySQl, HTML, CSS and javascript and familiar with web development
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experince</p>
+                        <p class="tab-links " onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br>Backend languages
+                            <div class="level">
+                                <div class="level-range"></div>
+                            </div>
+                        </li>
+                            <li><span>MySQl</span><br>Database
+                                <div class="level">
+                                    <div class="level-range1"></div>
+                                </div>
+                            </li>
+                            <li><span>HTML</span><br>Frontend languages
+                                <div class="level">
+                                    <div class="level-range2"></div>
+                                </div>
+                            </li>
+                            <li><span>CSS</span><br>Frontend languages
+                                <div class="level">
+                                    <div class="level-range3"></div>
+                                </div>
+                            </li>
+                            <li><span>javascript</span><br>Script languages
+                                <div class="level">
+                                    <div class="level-range4"></div>
+                                </div>
+                            </li>
+                            <li><span>DSA</span><br>Data Structures and Algorithms
+                                <div class="level">
+                                    <div class="level-range5"></div>
+                                </div>
+                            </li>
+                            <li><span>web development</span><br>Web Developer
+                                <div class="level">
+                                    <div class="level-range6"></div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Frasher</span><br>No Experince</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>MCA From LNCT Group Of Colleges (Lnct unuversity)</li>
+                            <li><span>2021</span><br>BCA From A.N.S College(Patliputra university)</li>
+                            <li><span>2018</span><br>12th SHRI SHYAM SUNDAR H/S,MISI,PATNA (BSEB)</li>
+                            <li><span>2016</span><br>10th SHRI SHYAM SUNDAR H/S,MISI,PATNA (BSEB)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------- project --------- -->
+    <div id="Project">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <div class="project-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-hospital-user"></i>
+                    <h2>Hospital Management System</h2>
+                    <p>A Hospital Management System (HMS) using Python and MySQL manages hospital 
+                        operations like patient registration, appointments, and billing. Python handles 
+                        user interaction and logic, while MySQL stores patient and staff data securely.
+                         The system automates tasks, improves efficiency, and provides real-time data management for hospitals
+                    </p>
+                    <a href="#" >Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-duotone fa-solid fa-user-tie"></i>
+                    <h2>My Portfolio</h2>
+                    <p>My portfolio showcases my journey as a web developer, featuring projects like a Hospital Management System,
+                        personal portfolio, and a Rock-Paper-Scissors game. It highlights my skills in Python, MySQL, HTML, CSS, and 
+                        JavaScript. You can explore my GitHub, CodeChef, LeetCode, and GeeksforGeeks profiles for more.
+                    </p>
+                    <a href="#" >Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-duotone fa-solid fa-gamepad"></i>
+                    <h2>Rock paper scissor</h2>
+                    <p>The Rock Paper Scissors project allows users to play against a computer by selecting rock, 
+                        paper, or scissors. The game randomly generates the computer's choice, compares it with the user's selection,
+                        updates the score, and displays win, lose, or draw messages.
+                    </p>
+                    <a href="#" >Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------- Portfolio------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-tital">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://i.ibb.co/Yj57MTH/Screenshot-2024-08-18-204121.png" alt="Amzone" border="0">
+                    <!-- <img src="/NEW/img/Screenshot 2024-08-18 204121.png" alt="Amzone"> -->
+                    <div class="layer">
+                        <h3>amazon colon</h3>
+                        <p>Amazon (Amazon.com) is the world's largest online retailer and a prominent cloud service provider.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://i.ibb.co/WcXsdwf/Screenshot-2024-08-18-204030.png" alt="Flipkart" border="0">
+                    <!-- <img src="/NEW/img/Screenshot 2024-08-18 204030.png" alt="Flipkart"> -->
+                    <div class="layer">
+                        <h3>flipkart clone</h3>
+                        <p>The One-stop Shopping Destination. E-commerce is revolutionizing the way we all shop in India</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://i.ibb.co/m5N4N2t/Screenshot-2024-08-18-204245.png" alt="Nextflix" border="0">
+                    <!-- <img src="/NEW/img/Screenshot 2024-08-18 204245.png" alt="Netflix"> -->
+                    <div class="layer">
+                        <h3>Netflix colon</h3>
+                        <p> Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <ul class="my-work-contener">
+                    <li><a href="https://github.com/Sumant045">GitHub</a></li>
+                    <li><a href="https://www.codechef.com/users/sumant_67">Codechef</a></li>
+                    <li><a href="https://leetcode.com/u/Sumant45/">LeetCode</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/user/sumantkummw1n/">Geeks for Geeks</a></li>      
+                </ul>
+                <a href="#" class="btn" onclick="closemenu()"> See more</a>
+            </div>
+        </div>
+    </div>
+<!-- ---------------------------------- Contact---------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-tital">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>Sumantkumarsirsi@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+917061233194</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sumant-kumar-36846427a/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100036620230311"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/skt_ak47/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="/NEW/img/Sumant-Kumar-FlowCV-Resume-20240814.pdf" download class="btn btn2">Downlode CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea type="Message" rows="6" placeholder="Your Massage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>@ Sumant. Made By Sumant </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
